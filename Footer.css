@@ -1,0 +1,47 @@
+/* Footer container */
+footer {
+  display: flex;
+  justify-content: space-between;  /* Space out the left and right sections */
+  align-items: center;  /* Vertically center the content */
+  background-color: #333;  /* Dark background color */
+  color: white;  /* White text */
+  padding: 20px 40px;  /* Padding for spacing */
+  width: 100%;  /* Make sure the footer stretches across the entire width */
+  position: relative;  /* Stay at the bottom */
+  flex-shrink: 0;  /* Prevent footer from shrinking */
+}
+
+/* Left section for social links */
+.footer-left {
+  display: flex;
+  gap: 20px;  /* Space between links */
+}
+
+.footer-left .social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-left .social-links a:hover {
+  color: #00aaff;  /* Hover effect for links */
+}
+
+/* Right section for the copyright text */
+.footer-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;  /* Stack content vertically */
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-bottom: 10px;
+  }
+}

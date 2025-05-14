@@ -1,0 +1,79 @@
+/* Apply a cool font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    margin: 0;
+    font-family: 'Bebas Neue'
+  }
+
+.navbar {
+  background-color: #000000; 
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+
+  .navbar-logo {
+    height: 80px;
+    width: auto;  
+  }
+  
+
+/* Sale Banner */
+.sale-banner {
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  background-color: #ff4081; 
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.nav-buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar-text {
+    font-size: 1.5rem; 
+    height: 40px;
+    width: auto;
+  }
+
